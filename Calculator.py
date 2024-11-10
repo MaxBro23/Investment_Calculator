@@ -205,6 +205,7 @@ class InvestmentCalculator(QWidget):
 
         plt.figure(figsize=(self.fig_width, self.fig_height))
         index = np.arange(len(yearly_investment))
+        print(index)
 
         plt.bar(index, yearly_investment, label='Invested capital', color='forestgreen')
         for i, v in enumerate(yearly_interest):
@@ -213,8 +214,8 @@ class InvestmentCalculator(QWidget):
 
         plt.xlabel('Years',fontsize=self.font_size_heading)
         plt.ylabel('Sum (€)', fontsize=self.font_size_heading)
-        plt.title('Invested capital and interest rate per year', fontsize=self.font_size_heading, pad=20)
-        plt.xticks(index, range(1, len(yearly_investment) + 1), fontsize=self.font_size)
+        plt.title('Invested capital and interest rate per year', fontsize=self.font_size_heading)
+        plt.xticks(index, range(0, len(yearly_investment)), fontsize=self.font_size)
         plt.gca().yaxis.set_major_formatter(ticker.FuncFormatter(format_func))
         plt.xticks(fontsize=self.font_size)
         plt.yticks(fontsize=self.font_size)
