@@ -1,5 +1,5 @@
 # Investment Calculator
-Investment calculator with GUI to calculate investment growth
+Investment calculator with GUI
 
 Hi and welcome to my investment calculator! It is programmed in Python and makes use of the libraries [Matplotlib](https://github.com/matplotlib/matplotlib), [NumPy](https://github.com/numpy/numpy),
 [tkinter](https://docs.python.org/3/library/tkinter.html) and [PyQt5](https://github.com/PyQt5). So make sure you have these installed in order to run the program!
